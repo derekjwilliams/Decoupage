@@ -24,7 +24,7 @@ The slugs
 The response will be either a map of time:value pairs or an array of values.  In the
 case of the response containing an array of values the header will contain the sampling interval.
 
-##Cutouts
+## Cutouts
 
 There are exactly two kinds of time series data that can be represented in
 cutouts.  
@@ -60,7 +60,7 @@ These sizes are deliberately human scaled.  In addition power 2 sizes are availa
 if time unit of measure is omitted then seconds is assumed
 
 
-##Data Values
+## Data Values
 Anything that can be represented in JSON, so pretty much anything.  
 For the majority of use cases the Data Values will be Numbers.
 
