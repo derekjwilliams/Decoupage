@@ -5,11 +5,11 @@ RESTful API for time series data cutouts.  Each cutout of data is
 composed of a header and data.  Various backends can be supported, the
 initial target is MongoDB with or without Cube.
 
-##Motivation
+## Motivation
 
 Fast data retrieval mechanism that allows for simple server side caching.
 
-##API Example
+## API Example
 
 www.nicedata.com/kelpie/system/decoupage/cutouts/valuesxyz/simple/2013-01-02T08:00:00Z/17hours/1second
 
@@ -64,9 +64,9 @@ if time unit of measure is omitted then seconds is assumed
 Anything that can be represented in JSON, so pretty much anything.  
 For the majority of use cases the Data Values will be Numbers.
 
-##Data Response Headers
+## Data Response Headers
 
-###Map Of Values Header
+### Map Of Values Header
 
 This is for use when the data is non uniformly sampled.
 
@@ -84,7 +84,7 @@ the request was fulfilled.  The dimensions are start time and cutout size.
 The requestTime is the time on the server when the response was completed. 
 This can be used by the client to setup Comet type requests, more later.
 
-###Array Header
+### Array Header
 
 This is for use when the data is uniformly sampled
 
@@ -108,7 +108,7 @@ In addition:
 * sampling interval
 * time of the last data value
 
-##The Data
+## The Data
 
 The data is either a map or an array.  In both cases the format will either
 contain just the data, or statistics on the data in the interval of 
